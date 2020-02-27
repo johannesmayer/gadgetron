@@ -33,7 +33,7 @@ namespace Gadgetron
             ArrayType csm;
 
             coil_map_Inati<ValueType>(*input_array, csm);
-            *m2->getObjectPtr() = &csm;
+            *m2->getObjectPtr() = csm;
         }
         else
         {
