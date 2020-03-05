@@ -23,6 +23,10 @@ namespace Gadgetron
 
         GADGET_DECLARE(CoilComputationGadget);
 
+        GADGET_PROPERTY(ks_, size_t, "Correlation matrix size in plane.", 7);
+        GADGET_PROPERTY(kz_, size_t, "Correlation matrix size in slice direction.", 5);
+        GADGET_PROPERTY(power_, size_t, "Number of iterations to apply power method", 3);
+
         typedef std::complex<float> ValueType;
         typedef hoNDArray< ValueType > ArrayType;
 
